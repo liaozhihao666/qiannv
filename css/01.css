@@ -1,0 +1,32 @@
+a:hover {
+  color: #f10215; }
+
+h2 {
+  color: #f10215; }
+
+div {
+  color: #f10215; }
+
+p {
+  color: #f10215; }
+
+div {
+  border: 1px solid #f10215;
+  width: 200px; }
+
+p {
+  border: 1px solid #f10215; }
+
+#container div.desc h1 {
+  color: #333; }
+
+#container div.desc p {
+  color: #0aa1ed; }
+
+#container div.product {
+  background: #eee; }
+
+#container a {
+  color: #000; }
+  #container a:hover {
+    color: red; }

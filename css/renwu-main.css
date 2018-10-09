@@ -1,0 +1,10 @@
+.main{
+    width:1980px;
+    height:2180px;
+    position: relative;
+
+}
+.main video{
+    position: relative;
+    top:-81px;
+}

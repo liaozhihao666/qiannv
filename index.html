@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/js.css"/>
+    <script src=js/vue.js></script>
+</head>
+<body>
+<div class="video-btn">
+       <div class="btn-video"></div>
+    </div>
+<header>
+    <div class="header">
+        <div class="header-top">
+            <a href="http://localhost:3000/index.html"><img  class=" clearfix" src="images/logo.png" ></a>
+            <div class="chaxun">
+                <input class="new-list-input" type="text"placeholder="请输入关键字">
+                <img class="search2" src="images/search2.png" alt="">
+                <a style="color:black"href="http://localhost:3000/products.html">商品购买</a>
+            </div>
+            <ul class="list-unstyled clearfix float-right">
+                <li id="signout"><a href="http://localhost:3000/zhuce.html"class="zhuce">注册</a><a id="btnLogin" href="http://localhost:3000/login1.html">登录</a></li>
+                <li id="signin"><a class="d-inline-block float-left pl-0 pr-0">欢迎<a id="uname" class="pl-0 pr-0 mr-0">dingding<a id="btnSignout">注销</a></a></a></li>
+                <li><a href="#">安卓充值</a></li>
+                <li><a href="#">网易游戏全目录&nbsp;&nbsp;<div class="sanjiao"></div></a>
+                </li>
+                <li><a style="padding:0px;" href="#">
+                    <marquee  style="width:90px;height:33px;text-align: center"behavior="scroll" scrollamount="1"direction="up" >安卓充值9.8折</marquee></a></li>
+            </ul>
+            <div class="video">
+            </div>
+            <div class="video-center ">
+                <video  preload="auto" controls width="880px" height="580px">
+                    <source src="images/video/video.mp4" > </source>
+                </video>
+                <img src="images/video-shiping.png" alt=""/>
+                <div class="btn-close"></div>
+            </div>
+        </div>
+    </div>
+    <div class="topnav">
+        <div id="navbg"></div>
+        <ul id="navbar">
+            <li><a class="nav1" href="#"></a></li>
+            <li class="nav2">
+                <span id="nav2"><a href="http://localhost:3000/news.html"></a></span>
+                <div class="subnav">
+                    <a href="#">最新新闻</a>
+                    <a href="#">热点新闻</a>
+                    <a href="#">官方公告</a>
+                    <a class="subnava" href="#">最新活动</a>
+                </div>
+            </li>
+            <li class="nav2" >
+                <span id="nav3">下载专区</span>
+                <div class="subnav">
+                    <a href="#">游戏下载</a>
+                    <a href="#">注册账号</a>
+                    <a href="#">领取礼包</a>
+                    <a class="subnava"href="#">官方助手app</a>
+                </div>
+            </li>
+            <li style="margin-right: 282px;"class="nav2" >
+                <span id="nav4">游戏资料</span>
+                <div class="subnav">
+                    <a href="http://localhost:3000/xinshou.html">新手宝典</a>
+                    <a href="#">职业门派</a>
+                    <a href="#">主角剧情</a>
+                    <a class="subnava"href="#">任务攻略</a>
+                </div>
+            </li>
+            <li class="nav2" >
+                <span id="nav5">视听盛宴</span>
+                <div class="subnav">
+                    <a href="#">精彩视频</a>
+                    <a href="#">原声音乐</a>
+                    <a href="#">游戏图鉴</a>
+                    <a class="subnava"href="#">官方助手app</a>
+                </div>
+            </li>
+            <li class="nav2" >
+                <span id="nav6">客服专区</span>
+                <div class="subnav">
+                    <a href="#">自助百宝箱</a>
+                    <a href="#">账户保护</a>
+                    <a href="#">账户安全</a>
+                    <a class="subnava"href="#">角色查询</a>
+                </div>
+            </li>
+            <li class="nav2" >
+                <span id="nav7">玩家交流</span>
+                <div class="subnav">
+                    <a href="#">全新口袋版</a>
+                    <a href="#">梦岛社区</a>
+                    <a href="#">同人站</a>
+                    <a class="subnava"href="#">官方微信</a>
+                </div>
+            </li>
+            <li class="nav2"id="nav8">
+                <span >官方论坛</span>
+                <div class="subnav" id="erweima">
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="index">
+    <video  autoplay muted loop style="width:100%;" src="images/video/bg.mp4"></video>
+</div>
+    <div id="index-footer">
+        <div class="xiazai">
+            <div class="button2">
+            </div>
+            <div class="button3">
+            </div>
+        </div>
+    </div>
+<div class="container1 animate-show">
+    <div class="item clearfix">
+        <div class="link">
+            <a href="#" id="link_download"></a>
+            <a href="#" id="link_koudai"></a>
+            <ul class="list-unstyled clearfix">
+                <li>
+                    <a class="text-center" href="#">
+                        <i class="icon"></i>
+                        <em>快速注册</em>
+                    </a>
+               </li>
+               <li>
+                   <a class="text-center" href="#">
+                       <i class="icon2"></i>
+                       <em>充值中心</em>
+                   </a>
+               </li>
+                <li>
+                    <a class="text-center" href="#">
+                        <i class="icon3"></i>
+                        <em>全新口袋版</em>
+                    </a>
+                </li>
+                <li>
+                    <a class="text-center" href="#">
+                        <i class="icon4"></i>
+                        <em>账号保护</em>
+                    </a>
+                </li>
+                <li>
+                    <a class="text-center" href="#">
+                        <i class="icon5"></i>
+                        <em>领取礼包</em>
+                    </a>
+                </li>
+                <li>
+                    <a class="text-center" href="#">
+                        <i class="icon6"></i>
+                        <em>藏宝阁</em>
+                    </a>
+                </li>
+            </ul>
+               </div>
+        <div class="lunbo float-left">
+            <div class="tabs">
+                <div id="slider">
+                    <img id="#content1" src="images/lunbo.jpg" class="show">
+                    <img id="#content2"src="images/lunbo2.jpg" >
+                    <img id="#content3"src="images/lunbo3.jpg" >
+                    <img id="#content4"src="images/lunbo4.jpg" >
+                </div>
+                <ul id="tab" class="list-unstyled clearfix">
+                    <li ><a data-toggle="tab" class="active"href="#content1">2018全民争霸赛</a></li>
+                    <li><a data-toggle="tab" href="#content2">2018暑期一期</a></li>
+                    <li><a data-toggle="tab" href="#content3">七年之养 宠你如初</a></li>
+                    <li><a data-toggle="tab" href="#content4">新倩女幽魂口袋版</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="news float-left">
+            <ul class="tabtwo list-unstyled">
+                <li class="active"><a data-toggle="tab" href="#content5">最新</a></li>
+                <li><a data-toggle="tab" >消息</a></li>
+                <li><a data-toggle="tab" >公告 </a></li>
+                <li><a data-toggle="tab" >活动 </a></li>
+                <li><a data-toggle="tab" >热帖 </a></li>
+            </ul>
+            <div class="newsbox">
+                <p>
+                    <a href="#">《新倩女幽魂》2018嘉年华购票Q&A</a>
+                    <i class="icon7"></i>
+                </p>
+                <p>
+                    <a href="#">本周更新关键词【抢票】 嘉年华入场券开启预售</a>
+                    <i class="icon7"></i>
+                </p>
+            </div>
+            <div class="containertwo-box">
+                <div class="containertwo ">
+                    <div  class="active">
+                        <div class="news-list">
+                            <ul class="list-unstyled "style="width:410px;">
+                                <li class="news-li">
+                                    <span class="icon8">推荐</span>
+                                    <a style="display: inline" href="#">"达内CEO董克源："</a>
+                                    <b>掌破虚空，唯我独尊</b>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【威武】男神陶信参上</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="news-list">
+                            <ul class="list-unstyled "style="width:410px;">
+                                <li class="news-li">
+                                    <span class="icon8">推荐</span>
+                                    <a style="display: inline" href="">"网易CEO丁磊："</a>
+                                    <b>上网易大神 领专属福利</b>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="news-list">
+                            <ul class="list-unstyled "style="width:410px;">
+                                <li class="news-li">
+                                    <span class="icon8">推荐</span>
+                                    <a style="display: inline" href="#">"网易CEO丁磊："</a>
+                                    <b>上网易大神 领专属福利</b>
+                                <li class="news-li">
+                                    <span class="icon8">推荐</span>
+                                    <a style="display: inline" href="#">"网易CEO丁磊："</a>
+                                    <b>上网易大神 领专属福利</b>
+                                </li>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="news-list">
+                            <ul class="list-unstyled "style="width:410px;">
+                                <li class="news-li">
+                                    <span class="icon8">推荐</span>
+                                    <a style="display: inline" href="#">"网易CEO丁磊："</a>
+                                    <b>上网易大神 领专属福利</b>
+                                <li class="news-li">
+                                    <span class="icon8">推荐</span>
+                                    <a style="display: inline" href="#">"英雄去超越："</a>
+                                    <b>上网易大神 领专属福利</b>
+                                </li>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">[专题]【名人堂】【试用】Q版男画乔寻影</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="news-list">
+                            <ul class="list-unstyled "style="width:410px;">
+                                <li class="news-li">
+                                    <span class="icon8">推荐</span>
+                                    <a style="display: inline" href="#">"网易CEO丁磊："</a>
+                                    <b>上网易大神 领专属福利</b>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">&nbsp;[公告] 《新倩女幽魂》更新公告</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">&nbsp;[公告] 《新倩女幽魂》更新公告</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">&nbsp;[公告] 《新倩女幽魂》更新公告</a>
+                                </li>
+                                <li class="icon9">
+                                    <span class="float-right">[08/03]</span>
+                                    <a  style="display: inline" href="#">&nbsp;[公告] 《新倩女幽魂》更新公告</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<div class="bg2">
+    <div class="bg2-main animate-show">
+        <div class="bg2-nav">
+            <div class="affix">
+                <div class="fengling"></div>
+                <div class="yunduo"></div>
+                <div class="yunduo1"></div>
+                <ul>
+                    <li><a data-toggle="item" href="#my-order">画魂</a></li>
+                    <li class="active"><a data-toggle="item" href="#user-setting">偃师</a></li>
+                    <li><a data-toggle="item" href="#account-security">甲士</a></li>
+                    <li><a data-toggle="item" href="#sheshou">射手</a></li>
+                    <li><a data-toggle="item" href="#daoke">刀客</a></li>
+                    <li><a data-toggle="item" href="#xiake">侠客</a></li>
+                    <li><a data-toggle="item" href="#fangshi">方士</a></li>
+                </ul>
+            </div>
+            <div class="containerthree">
+                <div id="my-order" class="box" >
+                    <div class="huahunmain">
+                        <div id="renwu1"class="huahunrenwu">
+                            <div class="name"></div>
+                            <div class="line"></div>
+                        </div>
+                        <a class="btn" href="#">查看详情</a>
+                        <div class="leida"></div>
+                        <div class="video1">
+                            <div class="videoborder">
+                                <i></i>
+                            </div>
+                            <video  style=" width: 280px;height: 158px;" autoplay muted loop>
+                                <source src="images/video/video1.mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="renwu1man"></div>
+                </div>
+                <div id="user-setting" class="box active" >
+                    <div class="yanshi">
+                        <div id="yanshi2" class="yanshirenwu">
+                            <div class="name2"></div>
+                            <div class="line"></div>
+                        </div>
+                        <a class="btn" href="#">查看详情</a>
+                        <div class="leida"></div>
+                        <div class="video1">
+                            <div class="videoborder">
+                                <i></i>
+                            </div>
+                            <video  style=" width: 280px;height: 158px;" autoplay muted loop>
+                                <source src="images/video/video2.mp4">
+                            </video>
+
+                        </div>
+                    </div>
+                    <div class="renwu2man"></div>
+                </div>
+                <div id="account-security" class="box" >
+                    <div class="jiashi">
+                        <div id="jiashi2" class="sheshourenwu">
+                            <div class="name3"></div>
+                            <div class="line"></div>
+                        </div>
+                        <a class="btn" href="#">查看详情</a>
+                        <div class="leida"></div>
+                        <div class="video1">
+                            <div class="videoborder">
+                                <i></i>
+                            </div>
+                            <video  style=" width: 280px;height: 158px;" autoplay muted loop>
+                                <source src="images/video/video3.mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="renwu3man"></div>
+                </div>
+                <div id="sheshou" class="box" >
+                    <div class="sheshou">
+                        <div id="sheshou2" class="jiashirenwu">
+                            <div class="name4"></div>
+                            <div class="line"></div>
+                        </div>
+                        <a class="btn" href="#">查看详情</a>
+                        <div class="leida"></div>
+                        <div class="video1">
+                            <div class="videoborder">
+                                <i></i>
+                            </div>
+                            <video  style=" width: 280px;height: 158px;" autoplay muted loop>
+                                <source src="images/video/video5.mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="renwu4man"></div>
+                </div>
+                <div id="daoke" class="box" >
+                    <div class="daoke">
+                        <div id="daoke2" class="daokerenwu">
+                            <div class="name6"></div>
+                            <div class="line"></div>
+                        </div>
+                        <a class="btn" href="#">查看详情</a>
+                        <div class="leida"></div>
+                        <div class="video1">
+                            <div class="videoborder">
+                                <i></i>
+                            </div>
+                            <video  style=" width: 280px;height: 158px;" autoplay muted loop>
+                                <source src="images/video/video6.mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="renwu5man"></div>
+                </div>
+                <div id="xiake" class="box" >
+                    <div class="xiake">
+                        <div id="xiake2" class="xiakerenwu">
+                            <div class="name6"></div>
+                            <div class="line"></div>
+                        </div>
+                        <a class="btn" href="#">查看详情</a>
+                        <div class="leida"></div>
+                        <div class="video1">
+                            <div class="videoborder">
+                                <i></i>
+                            </div>
+                            <video  style=" width: 280px;height: 158px;" autoplay muted loop>
+                                <source src="images/video/video7.mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="renwu6man"></div>
+                </div>
+                <div id="fangshi" class="box" >
+                    <div class="fangshi">
+                        <div id="fangshi2" class="fangshirenwu">
+                            <div class="name7"></div>
+                            <div class="line"></div>
+                        </div>
+                        <a class="btn" href="#">查看详情</a>
+                        <div class="leida"></div>
+                        <div class="video1">
+                            <div class="videoborder">
+                                <i></i>
+                            </div>
+                            <video  style=" width: 280px;height: 158px;" autoplay muted loop>
+                                <source src="images/video/video8.mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="renwu7man"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="showtime animate-show ">
+        <div class="main ">
+            <ul class="renwunav list-unstyled">
+                <li class="showtimeul">
+                    <div class="showtime2">
+                        <img src="images/showtime2.png" alt=""/>
+                        <img src="images/showtime2.png" alt=""/>
+                        <img src="images/showtime2.png" alt=""/>
+                        <img src="images/showtime2.png" alt=""/>
+                    </div>
+                </li>
+            </ul>
+            <div class="renwutab">
+                <ul class="clearfix">
+                    <li>
+                        <div class="renwuul1">
+                            <img  src="images/renwuul1.jpg">
+                        </div>
+                        <div class="renwuul2"></div>
+                        <div class="renwuul3">
+                            <i class="mv"></i>
+                            新倩女幽魂 乐游记MV
+                        </div>
+                    </li>
+                    <li>
+                        <div class="renwuul1">
+                            <img src="images/renwuul6.jpg">
+                        </div>
+                        <div class="renwuul2"></div>
+                        <div class="renwuul3">
+                            <i class="mv"></i>
+                            新倩女幽魂 乐游记MV
+                        </div>
+                    </li>
+                    <li>
+                        <div class="renwuul1">
+                            <img src="images/renwuul2.jpg">
+                        </div>
+                        <div class="renwuul2"></div>
+                        <div class="renwuul3">
+                            <i class="mv"></i>
+                            新倩女幽魂 乐游记MV
+                        </div>
+                    </li>
+                    <li>
+                        <div class="renwuul1">
+                            <img src="images/renwuul3.jpg">
+                        </div>
+                        <div class="renwuul2"></div>
+                        <div class="renwuul3">
+                            <i class="mv"></i>
+                            新倩女幽魂 乐游记MV
+                        </div>
+                    </li>
+                    <li>
+                        <div class="renwuul1">
+                            <img src="images/renwuul4.jpg">
+                        </div>
+                        <div class="renwuul2"></div>
+                        <div class="renwuul3">
+                            <i class="mv"></i>
+                            新倩女幽魂 乐游记MV
+                        </div>
+                    </li>
+                    <li>
+                        <div class="renwuul1">
+                            <img src="images/renwuul5.jpg">
+                        </div>
+                        <div class="renwuul2"></div>
+                        <div class="renwuul3">
+                            <i class="mv"></i>
+                            新倩女幽魂 乐游记MV
+                        </div>
+                    </li>
+                    <a href="#"></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-bg animate-show">
+        <div class="footer1"></div>
+        <div class="footer">
+            <div class="footer-main">
+                <div class="footer-main-left">
+                    <div class="title">
+                        <div class="langbo">
+                            <img class="langbo1" src="images/langbo.png" alt=""/>
+                            <img class="langbo2" src="images/langbo.png" alt=""/>
+                            <img class="langbo3" src="images/langbo.png" alt=""/>
+                            <img class="langbo4" src="images/langbo.png" alt=""/>
+                            <img class="langbo5" src="images/langbo.png" alt=""/>
+                            <img class="langbo6" src="images/langbo.png" alt=""/>
+                        </div>
+                    </div>
+                    <ul class="footer-main-left-ul1">
+                        <li class="float-left">
+                            <a href="#">
+                                <i class="libao"></i>
+                                <span style="color:#5a5a5a;font-size: 14px;">领取礼包</span>
+                            </a>
+                        </li>
+                        <li class="float-left ml-5">
+                            <a href="#">
+                                <i class="tansuo"></i>
+                                <span style="color:#5a5a5a;font-size: 14px;">探索准备</span>
+                            </a>
+                        </li>
+                        <li class="float-left ml-5">
+                            <a href="#">
+                                <i class="rumen"></i>
+                                <span style="color:#5a5a5a;font-size: 14px;">入门指南</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-main-left-ul2">
+                        <li class="float-left">
+                            <a href="#">快速升级</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">贸易指南</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">三界伙伴</a>
+                        </li>
+                        <li class="float-left">
+                            <a href="#">装备介绍</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">灵兽系统</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">坐骑系统</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-main-left-ul3">
+                        <li class="float-left">
+                            <a href="#">帮会联赛</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">关宁校场</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">寇岛围攻</a>
+                        </li>
+                        <li class="float-left">
+                            <a href="#">镖行天下</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">宁远觉华</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">十世镜</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-main-left-ul3">
+                        <li class="float-left">
+                            <a href="#">婚姻系统</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">养育系统</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">家园系统</a>
+                        </li>
+                        <li class="float-left">
+                            <a href="#">生活系统</a>
+                        </li>
+                        <li class="float-left ml-3">
+                            <a href="#">雷峰塔</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-main-center">
+                    <div class="title">
+                        <div class="langbo">
+                            <img class="langbo1" src="images/langbo.png" alt=""/>
+                            <img class="langbo2" src="images/langbo.png" alt=""/>
+                            <img class="langbo3" src="images/langbo.png" alt=""/>
+                            <img class="langbo4" src="images/langbo.png" alt=""/>
+                            <img class="langbo5" src="images/langbo.png" alt=""/>
+                            <img class="langbo6" src="images/langbo.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="footer-main-center-img">
+                        <ul class="mt-2 list-unstyled clearfix">
+                            <li class="float-left mr-3 ">
+                                <img width="175" height="110"src="images/footer-main-center-title1.jpg" alt="">
+                            </li>
+                            <li class="float-left ">
+                                <img width="175" height="110"src="images/footer-main-center-title2.jpg" alt="">
+                            </li>
+                            <li class="float-left">
+                                <a title="[任性]又一个彩光出世/四幸运了解一下/看千羽鉴定家具"href="#"></a>
+                                <p class="float-left">[任性]又一个彩光出世/四幸运了解一下/看千羽鉴定家具</p>
+                                <span class="float-left">07/11</span>
+                            </li>
+                            <li class="float-left">
+                                <a title="[活动]最全家园盆栽图鉴+实用搭配推荐（二）附骨头屋和猫爬架"href="#"></a>
+                                <p class="float-left">[活动]最全家园盆栽图鉴+实用搭配推荐（二）附骨头屋和猫爬架</p>
+                                <span class="float-left">07/09</span>
+                            </li>
+                            <li class="float-left">
+                                <a title="[活动]你的战场你作主，期待你们的激情～"href="#"></a>
+                                <p class="float-left">[活动]你的战场你作主，期待你们的激情～</p>
+                                <span class="float-left">07/09</span>
+                            </li>
+                            <li class="float-left">
+                                <img class="mt-1" src="images/qingliang.jpg" alt="">
+                            </li>
+
+                            <li class="float-left">
+                                <a title="[采访]关宁酷爽人头收割机，操作流偃师：花ヤ荣"href="#"></a>
+                                <p class="float-left">[采访]关宁酷爽人头收割机，操作流偃师：花ヤ荣</p>
+                                <span class="float-left">07/06</span>
+                            </li>
+                            <li class="float-left">
+                                <a title="[活动]交友平台已开启，找一个好的队友一起来玩吧~"href="#"></a>
+                                <p class="float-left">[活动]交友平台已开启，找一个好的队友一起来玩吧~</p>
+                                <span class="float-left">07/06</span>
+                            </li>
+                            <li class="float-left">
+                                <a title="[建议]开发组面对面26期:貔貅玩法迭代/官府师门任务优化"href="#"></a>
+                                <p class="float-left">[建议]开发组面对面26期:貔貅玩法迭代/官府师门任务优化</p>
+                                <span class="float-left">07/06</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-main-right">
+                    <div class="title">
+                        <div class="langbo">
+                            <img class="langbo1" src="images/langbo.png" alt=""/>
+                            <img class="langbo2" src="images/langbo.png" alt=""/>
+                            <img class="langbo3" src="images/langbo.png" alt=""/>
+                            <img class="langbo4" src="images/langbo.png" alt=""/>
+                            <img class="langbo5" src="images/langbo.png" alt=""/>
+                            <img class="langbo6" src="images/langbo.png" alt=""/>
+                        </div>
+                        <div class="wanjia">
+                            <div class="show">
+                                <ul class="float-left">
+                                    <img class="ml-3 mr-2" width="170" height="226"src="images/wanjia1.jpg" alt="">
+                                    <img width="170" height="226"src="images/wanjia2.jpg" alt="">
+                                </ul>
+                                <ul class="float-left">
+                                    <img class="ml-5 mr-2" width="170" height="226" src="images/wanjia3.jpg" alt="">
+                                    <img width="170" height="226"src="images/wanjia4.jpg" alt="">
+                                </ul>
+                                <ul class="float-left">
+                                    <img class="ml-5 mr-2" width="170" height="226"src="images/wanjia5.jpg" alt="">
+                                    <img width="170" height="226"src="images/wanjia6.jpg" alt="">
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button">
+                            <div class="swiper-button-left"></div>
+                            <div class="swiper-button-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                       <ul class="footer-bottom-ul1">
+                           <li><a href="#">账号安全</a></li>
+                           <li><a href="#">账号修复</a></li>
+                           <li><a href="#">账号保护</a></li>
+                           <li><a href="#">防沉迷查询</a></li>
+                           <li><a href="#">客服专区</a></li>
+                           <li><a href="#">自助百宝箱</a></li>
+                       </ul>
+                        <div class="phone">
+                            服务电话:<br>
+                            95163520
+                        </div>
+                        <ul class="footer-bottom-ul2 list-unstyled">
+                            <li class="li1"></li>
+                            <li class="li2"></li>
+                            <li class="li3"></li>
+                            <li class="li4"></li>
+                        </ul>
+                        <div class="ewm">
+                            <img src="images/ewm.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-logo animate-show">
+        <div class="footer-main-logo">
+            <img src="images/footerlogo.PNG" >
+            <div  class="footer-font">
+                <a> 公司简介 - 客户服务 - 相关法律 - 网易游戏 - 联系我们 - 商务合作 - 加入我们</a>
+                <p>网易公司版权所有 ©1997-2018 中国网络游戏版权保护联盟举报中心</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/1.js"></script>
+<script src="js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+  <script src="js/fz.js"></script>
+<style>
+	body{
+	margin:0;
+	}
+	video{
+	position:fixed;
+	right:0;
+	bottom:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-9999;
+	}
+.header{
+margin:0 auto;
+width:960px;
+height:70px;
+position:relative;
+}
+span{
+position:relative;
+left:10px;
+font-size:24px;
+}
+.container{
+width:100%;
+height:900px;
+}
+
+
+#xhz{
+background-color:rgba(0,0,0,0.3);
+height:440px;
+width:600px;
+box-sizing: border-box;
+margin-right: 32px;
+margin-top: 72px;
+float:right;
+
+}
+#xhz .text  p{
+color:#fff;
+font-size:24px;
+margin-left:15px;
+
+}
+#xhz .text span a{
+float:right;
+margin-right:190px;
+margin-top:20px;
+font-size:10px;
+text-decoration:none;
+color:#fff;
+}
+.yh{
+margin-left:35px;
+color:#fff;
+margin-bottom:20px;
+
+}
+.mm{
+margin-left:20px;
+color:#fff;
+margin-bottom:20px;
+}
+.yx{
+margin-bottom:20px;
+margin-left:50px;
+color:#fff;
+
+
+}
+input{
+padding-left:20px;
+}
+.an{
+margin-left:80px;
+padding:20px;
+width:170px;
+height:30px;
+}
+.button_zc{
+border:none;
+width:320px; 
+height:40px;
+background-color:#0aa1ed;
+font-size:14px;
+font-weight:bold;
+color:#fff;
+}
+#t,#w,#e{
+font-size:17px;
+}
+</style>
+</head>
+<body>
+<video width="100%"  autoplay muted loop>
+  <source src="images/video/huahun1.webm">
+</video>
+<div class="header">
+<a href="./yhxz.html">
+<img src="images/wangyi.png">
+</a>
+</div>
+<div class="container">
+<div id="xhz">
+<form method="post" action="/users/register">
+<div class="text">
+<p>新用户注册
+<span>
+<a href="http://localhost:3000/login.html">
+直接登录
+</a>
+</span>
+</p>
+</div>
+<form method="post" action="/user/xzsczc">
+<div class="yh">
+用户名：<input style="width:300px; height:30px;" type="text"  class="uname" placeholder="请输入用户名" onblur="g()" onfocus="q()" id="uname"
+name="uname">
+  <span id="t"></span>
+</div>
+<div class="mm">
+登录密码：<input style="width:300px; height:30px;" class="upwd" type="password" placeholder="请输入密码" id="upwd" onblur="zz()" name="upwd" onfocus="mm()">
+<span id="w"></span>
+
+</div>
+<div class="mm">
+确认密码：<input style="width:300px; height:30px;" class="cpwd" type="password" placeholder="请确认密码" onblur="zx()"id="cpwd">
+<span id="e"></span>
+</div>
+<div class="yx">
+邮箱：<input  style="width:300px; height:30px;" type="email"class="email" placeholder="请输入邮箱地址" name="email">
+</div>
+<div class="yh">
+手机号：<input style="width:300px; height:30px;" class="phone" type="text" placeholder="请输入您的手机号" name="phone">
+</div>
+<div class="an">
+<input  class="button_zc" type="button" value="提交注册信息">
+
+<script>
+  //失去焦点
+  function g(){
+	$("t").innerHTML="用户名不能为空";
+  }
+  //焦点
+  function q(){
+	$("t").innerHTML="用户名必须为6-12位";
+  }
+  function zz(){
+ $("w").innerHTML="密码为16位";
+}
+function mm(){
+	var hz=$("upwd").value;
+	if(hz==""){
+     $("w").innerHTML="密码不能为空";
+	}else{
+	 $("w").innerHTML="通过";
+	}
+}
+function zx(){
+		if($("cpwd").value==""){
+			$("e").innerHTML="确认密码不能为空";
+		}else {
+			if($("upwd").value==$("cpwd").value){
+				$("e").innerHTML="通过";
+			}else{
+				$("e").innerHTML="确认密码和密码不相等，请重新输入";
+			}
+		}
+	}
+  </script>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/register.js"></script>
+</div>
+</form>
+</div>
+</div>
+
+</body>
+</html>

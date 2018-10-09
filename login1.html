@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <title>网页</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<style>
+    video{
+        position: absolute;
+        top:0px;
+        z-index: 2;
+    }
+    .header{
+        position:relative;
+        z-index: 3;
+    }
+</style>
+<body>
+<video width="100%"  autoplay muted loop>
+    <source src="images/video/huahun2.webm">
+</video>
+<div id="container">
+    <!--网易账号中心-->
+    <div class="header">
+        <img src="images/wangyi.png" alt="">
+    </div>
+
+    <div class="main">
+        <div class="main-box">
+            <div class="black">
+                <table>
+                    <tr>
+                        <td>
+                            <h4>登录新倩女幽魂</h4>
+                        </td>
+                        <td>
+                            <a href="http://localhost:3000/zhuce.html">新用户注册</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" placeholder="请输入您的用户名" class="uname" name="uname" value="dingding">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="password" placeholder="请输入您的密码" class="upwd" name="upwd" value="123456">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="autoLogin">
+                            <input type="checkbox">自动登录
+                        </td>
+                        <td>
+                            <a href="#">忘记密码？</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="登录" class="login">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

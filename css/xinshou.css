@@ -1,0 +1,339 @@
+/*左侧导航*/
+a{
+    text-decoration: none!important;
+}
+.xinshou-list{
+    width:200px;
+    min-height:1080px;
+    background: url("../images/xinshou-bg.jpg")no-repeat;
+    position: fixed;
+    top:-61px;
+    left:0px;
+    z-index: 10;
+
+}
+.xinshou-list .xinshou1{
+    display: block;
+    width:188px;
+    height:52px;
+    background: url("../images/xinshou1.png")no-repeat;
+    position: fixed;
+    top:20px;
+    left:5px;
+
+}
+
+.xinshou-list li{
+    display: block;
+    width:157px;
+    height:32px;
+    position: fixed;
+    top:100px;
+    left:17px;
+    background: url("../images/xinshou2.png")no-repeat;
+
+
+}
+.xinshou-list .xinshou2 i{
+    display: inline-block;
+    width:0px;
+    height:0px;
+    font-size: 25px;
+    margin-top: -2px;
+    margin-left: 24px;
+}
+.xinshou-list .xinshou2 i:hover{
+    font-size: 25px;
+    border-bottom: 1px solid red;!important;
+    color:#00d4b4;
+}
+
+ .beijing-list1{
+     position: absolute;
+     min-width:1200px;
+     width: 100%;
+     height: 1200px;
+     background: url("../images/beijing.jpg")no-repeat;
+ }
+.beijing-list7{
+    position: absolute;
+    min-width:1200px;
+    width: 100%;
+    height: 1200px;
+    background: url("../images/beijing.jpg")no-repeat;
+}
+.beijing-list7 img{
+    position: absolute;
+    top:218px;
+    left:272px;
+}
+ .beijing-list .show{
+     z-index: 4;
+ }
+.beijing-list2{
+    position: absolute;
+    width: 100%;
+    min-width:1200px;
+    height: 1200px;
+    background: url("../images/beijing.jpg")no-repeat;
+}
+.beijing-list2 img{
+    position: absolute;
+   top:235px;
+    left:278px;
+}
+.beijing-list4{
+    position: absolute;
+    width: 100%;
+    min-width:1200px;
+    height: 1200px;
+    background: url("../images/beijing.jpg")no-repeat;
+}
+.accordion{width:200px; margin:0 auto;position:fixed;top:162px;z-index: 11}
+.accordion>.title{
+    border-bottom:1px dashed #fff;
+    padding:22px;
+    padding-left:44px;
+    cursor:pointer;
+    height:80px;
+    color:#fff;
+    font-weight: 200;
+    font-size:22px;
+}
+.accordion .active{
+    background: url("../images/xinshou-list.png");
+}
+.accordion>.content ul li a{
+    display: inline-block;
+    width:200px;
+    height:58px;
+    color:#fff;
+    font-size: 16px;
+    line-height: 58px;
+    text-align: center;
+    border-bottom:1px solid #4f4690;
+}
+.accordion .content ul .active1{
+    font-weight:bold;
+    background: #0aa1ed;
+
+}
+
+.fade{
+    height:0;
+    opacity:0;
+    overflow:hidden;
+    transition:all .5s linear;
+}
+
+.in{
+    height:174px;
+    opacity:1;
+}
+.in1{
+    height:58px;
+    opacity:1;
+}
+.in2{
+    height:116px;
+    opacity:1;
+}
+.bottom a{
+    display: inline-block;
+    width:90px;
+    height:28px;
+    background:#345fa0;;
+    line-height: 28px;
+   text-align: center;
+   margin-left: 5px;
+    margin-top:20px;
+}
+.bottom a{
+    color:#fff;
+}
+.beijing-list1-header .p3{
+    position: absolute;
+    top:245px;
+    left:280px;
+    width:30px;
+    height:23px;
+    background: url("../images/xinshou-qiannv.png")no-repeat  -1px -102px;
+}
+.beijing-list4-header .p3{
+    position: absolute;
+    top:245px;
+    left:280px;
+    width:30px;
+    height:23px;
+    background: url("../images/xinshou-qiannv.png")no-repeat  -1px -102px;
+}
+.beijing-list7-header .p3{
+    position: absolute;
+    top:245px;
+    left:280px;
+    width:30px;
+    height:23px;
+    background: url("../images/xinshou-qiannv.png")no-repeat  -1px -102px;
+}
+
+.beijing-list7-header h2{
+    font-size: 26px;
+    line-height: 30px;
+    position: absolute;
+    top:241px;
+    left:310px;
+    color: #3380e9;
+    font-weight: bold;
+    width: 180px;
+}
+.beijing-list1-header .p4{
+     position: absolute;
+     top:245px;
+     left:280px;
+     width:30px;
+     height:23px;
+     background: url("../images/xinshou-qiannv.png")no-repeat  -1px -102px;
+ }
+
+
+.beijing-list4 ul{
+    position: absolute;
+    top:300px;
+    left:280px;
+    z-index: 3;
+}
+.beijing-list4 ul .li1{
+    float: left;
+    position: relative;
+    z-index: 3;
+    width:195px;
+    height:76px;
+    line-height: 60px;
+    text-align: center;
+    background: url("../images/kuaisu.png")no-repeat;
+}
+.beijing-list4 ul .li2{
+    float: left;
+    position: relative;
+    z-index: 3;
+    width:195px;
+    line-height: 60px;
+    height:76px;
+    text-align: center;
+    background: url("../images/kuaisu.png")no-repeat 100% 0;
+}
+.beijing-list1-header h2{
+    font-size: 26px;
+    line-height: 30px;
+    position: absolute;
+    top:241px;
+    left:310px;
+    color: #3380e9;
+    font-weight: bold;
+    width: 180px;
+}
+.beijing-list4-header h2{
+    font-size: 26px;
+    line-height: 30px;
+    position: absolute;
+    top:241px;
+    left:310px;
+    color: #3380e9;
+    font-weight: bold;
+    width: 180px;
+}
+.beijing-list1-header .guanfang{
+    display:block;
+    width:272px;
+    height: 67px;
+    position: absolute;
+    top:320px;
+    left:310px;
+    background: url("../images/xiazai.png")no-repeat 0px -275px;
+
+}
+.beijing-list1-header .wangzheng{
+    display:block;
+    width:272px;
+    height: 67px;
+    position: absolute;
+    top:320px;
+    left:640px;
+
+    background: url("../images/xiazai.png")no-repeat -455px 0px;
+}
+.beijing-list1-header .xiahua{
+    display: block;
+    width:780px;
+    border-bottom: 1px dashed gray;
+    position: absolute;
+    top:293px;
+    left:281px;
+}
+.peizhi{
+    width:780px;
+    hieght:800px;
+    position:absolute;
+    top:170px;
+    left:0px;
+}
+.peizhi table {
+    position:absolute;
+    top:303px;
+    left:277px;
+}
+.peizhi table thead{
+    text-align: center;
+}
+
+table .th1{
+    background: linear-gradient(to top, #0aa1ed, gray);
+}
+table .th2{
+    background: linear-gradient(to top, #9fcdff, #20c997);
+}
+table tbody{
+    background: linear-gradient(to top, #9fcdff, #20c997);
+}
+.qa{
+    position:absolute;
+    top:460px;
+    left:0px;
+}
+.qa h3{
+    position: absolute;
+    top:310px;
+    left:278px;
+    width:300px;
+}
+.qa .p1{
+    position: absolute;
+    top:245px;
+    left:278px;
+    width:30px;
+    height:23px;
+    background: url("../images/xinshou-qiannv.png")no-repeat  -1px -102px;
+}
+.qa .p2{
+    position: absolute;
+    top: 355px;
+    left: 278px;
+    width: 780px;
+
+}
+.kuaisu2{
+    position:absolute;
+    top:364px;
+    left:281px;
+    width:255px;
+    height:255px;
+    border: 1px solid black;
+}
+.kuaisu2 img{
+    position: absolute;
+    top:53px;
+    left:60px;
+}
+
+
+

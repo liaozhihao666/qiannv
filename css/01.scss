@@ -1,0 +1,36 @@
+$jd_red:#f10215;
+$jd_red:blue !default;
+a:hover{
+  color:$jd_red;
+}
+h2{
+  color:$jd_red;
+}
+
+div{
+  color:$jd_red;
+}
+p{
+  color:$jd_red;
+}
+$my_border:1px solid $jd_red;
+div{
+  border:$my_border;
+  $width:200px;
+  width:$width;
+}
+p{
+  border:$my_border;
+}
+
+#container{
+  div.desc{
+    h1{color:#333;}
+    p{color:#0aa1ed;}
+  }
+  div.product{background:#eee;}
+  a{color:#000;
+    &:hover{color:red;  }
+  }
+
+}
