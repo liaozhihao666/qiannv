@@ -106,7 +106,7 @@ div.header-top ul li a:hover{
 }
 #nav1{
     position:relative;
-    top:0px;
+    top:-24px;
 }
 .nav2{
     width: 140px;

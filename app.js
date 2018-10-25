@@ -1,8 +1,7 @@
-const express = require('express');
+﻿const express = require('express');
 const session = require("express-session");
 const bodyParser = require('body-parser');
 var users=require("./routes/users");
-var news=require("./routes/news");
 var products=require("./routes/products");
 var cartItems=require("./routes/cartItems");
 var app = express();
@@ -16,7 +15,6 @@ app.use(session({
   saveUninitialized:true
 }));
 app.use("/users",users);
-app.use("/news",news);
 app.use("/products",products);
 app.use("/cartItems",cartItems);
 

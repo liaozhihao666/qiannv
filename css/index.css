@@ -1,7 +1,6 @@
 .index{
     background: url("../images/bg3.jpg")no-repeat center;
     height: 1272px;
-
     margin: 0 auto;
     position:relative;
     top:-96px;
@@ -9,9 +8,7 @@
 }
 .index video{
     position: absolute;
-   top:0px;
-
-
+    top:0px;
 }
 #index{
     width:1903px;

@@ -12,7 +12,6 @@ $(function(){
         else{
           alert("登录成功,自动返回上一页!");
             location.href="http://localhost:3000/index.html"
-
         }
       }
     })
